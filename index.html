@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>Test frontend Veronique Chassan</title>
+</head>
+<body>
+    <header>
+<!-- MENU -->
+        <button id="btn">☰</button>
+
+        <nav id="nav">
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#compte-btn">Mes Comptes</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+           <!-- IMAGE + TEXT  -->
+        <section id="image-container">
+            <!-- Full-width image with text -->
+           <div id="accueil"><h1 id="filter-text">Bienvenue sur votre gestion de compte bancaire</h1></div>
+        </section>
+
+        <div id="compte-btn-container">
+            <button id="compte-btn"><a target="blank" href="#compte-client"></a>Gérer votre compte</button>
+        </div>
+
+<!-- BANK COUNTS -->
+    <main>
+            <section class="informations-client">
+                <h1>Informations Client</h1>
+                <label for="prenom-nom">Prénom et Nom</label>
+                <input type="text" name="prenom-nom" id="prenom-nom-input">
+                <br>
+                <label for="identifiant">Identifiant</label>
+                <input type="number" name="identifiant" id="identifiant-input">
+                <div id="info-client-btn-box"> 
+                    <button class="valider-btn">Valider</button>   
+                </div>    
+            </section>
+
+            <section class="comptes-client">
+                <h1>Compte Client & Operations</h1>
+                <label for="prenom-nom">Prénom et Nom</label>
+                <input type="text" name="prenom-nom" id="prenom-nom-output">
+                <label for="identifiant">Identifiant</label>
+                <input type="number" name="identifiant" id="identifiant-output1">
+                <br>
+                <div>Solde en € <span id="solde"></span></div>
+                
+                <h2>Opérations :</h2>
+                <div id="operations-btn-box">
+                    <button class="retirer-argent-btn">Débit</button>
+                    <button class="ajouter-argent-btn">Crédit</button>
+                </div>
+            </section>
+
+          
+            <section class="operations">
+                <h1>Operation</h1>
+                <h2>Date: <span id="today-output"></span></h2>
+                <label for="identifiant">Identifiant</label>
+                <input type="number" name="identifiant" id="identifiant-output2">
+                <br>
+                <label for="montant">Montant en € à <span id="debit-credit"></span></label>
+                <input type="number" name="montant" id="montant">
+                <div>Solde en € <span id="nouveau-solde"></span></div>
+                <div id="solde-btn-box">
+                    <button class="solde-btn">Valider</button>
+                </div>
+            </section>
+     
+    </main>
+
+</body>
+<!-- FOOTER -->
+<footer id="footer">
+    <div>Copyright © 2022 Veronique Chassan | All rights reserved </div>
+    <div>Mentions légales</div>
+    <div id="contact">Contact: <a href="mailto:veroniquechassan@gmail.com" target="_blank">veroniquechassan@gmail.com</a></div>
+</footer>
+</html>
